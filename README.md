@@ -14,7 +14,7 @@ This protocol can be adopted by any class or struct which implements the static 
     UIImageCache.put(image, at: "key") // Put the image in the cache at key "key"
     let storedImage = UIImageCache.get("key") // Get the image back from the cache using the same key "key"
 
-With this implementation, the UIImageCache declaration can exist anywhere in a project and can be referenced globally to retrieve stored objects in the shared cache. In this way, it could be possible to define unique caches with different or equivalent types if one wishes to keep some objects in separate caches. For example, the following would be valid:
+With this implementation, the `UIImageCache` declaration can exist anywhere in a project and can be referenced globally to retrieve stored objects in the shared cache. In this way, it could be possible to define unique caches with different or equivalent types if one wishes to keep some objects in separate caches. For example, the following would be valid:
 
     struct UIImageCache: Cacheable
     {
