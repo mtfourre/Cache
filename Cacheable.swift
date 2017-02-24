@@ -1,5 +1,6 @@
 //
 //  Cacheable.swift
+//  Cacheable
 //
 //  Created by Michael Fourre on 1/28/17.
 //
@@ -61,5 +62,18 @@ extension Cacheable where K: NSString
     static func put(_ object: V?, at key: String?)
     {
         self.put(object, at: K(string: key ?? ""))
+    }
+}
+
+extension Cacheable where K: NSString, V: NSString
+{
+    static func get(_ key: String) -> String?
+    {
+        return self.get(K(string: key ?? ""))
+    }
+    
+    static func put(_ object: String?, at key: String?)
+    {
+        self.put(K(string: object ?? ""), at: K(string: key ?? ""))
     }
 }
