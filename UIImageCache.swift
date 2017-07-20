@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 
-public struct UIImageCache: Cacheable
-{
+public struct UIImageCache: Cacheable {
     public static var shared: NSCache<NSString, UIImage> = UIImageCache.cache
 }
