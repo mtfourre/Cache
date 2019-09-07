@@ -54,13 +54,3 @@ public extension Cacheable where K: NSString {
         self.put(object, at: K(string: key ?? ""))
     }
 }
-
-extension Cacheable where K: NSString, V: NSString {
-    static func get(_ key: String) -> String? {
-        return self.get(K(string: key ?? ""))
-    }
-    
-    static func put(_ object: String?, at key: String?) {
-        self.put(K(string: object ?? ""), at: K(string: key ?? ""))
-    }
-}
