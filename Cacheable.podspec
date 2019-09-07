@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "Cacheable"
-  s.version = "0.0.1"
+  s.version = "0.1.0"
   s.summary = "Protocol-oriented static caching interface for wrapping NSCache API"
   s.description = "Declare a static shared cache object in your definition of choice and adopt the Cacheable protocol. Interface with an easy to use and easy to read API with just one line of code."
   s.homepage = "https://github.com/mtfourre/Cacheable"
